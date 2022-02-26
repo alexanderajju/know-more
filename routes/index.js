@@ -1,5 +1,8 @@
 var express = require('express');
 var router = express.Router();
+require("../passport_config");
+const passport = require("passport");
+
 
 
 /* GET home page. */
@@ -10,11 +13,14 @@ router.get('/', function(req, res, next) {
    console.log(req.session.user,"user>>>>>>>>>>>>>>>>>>")
   }else{
 res.render('index', { title: 'Express'});
- console.log(req.session.user,"user12345>>>>>>>>>>>>>>>>>>")
+ console.log(sessionStorage)
   }
   
 });
 
-
+router.get(
+  "/google",
+  passport.authenticate("google", { scope: ["profile", "email"] })
+);
 
 module.exports = router;

@@ -1,29 +1,29 @@
 
 
-<section class="rooms">
+<section class="posts">
         <div class="container">
-          <div class="grid rooms-grid">
+          <div class="grid posts-grid">
               {{#each post}}
-            <div class="grid-item featured-rooms">
+            <div class="grid-item featured-posts">
               <div class="image-wrap">
               </div>
-              <div class="room-info-wrap">
-                <span class="room-price"
+              <div class="post-info-wrap">
+                <span class="post-price"
                   >{{this.title}}
                 </span>
                 <p class="paragraph">
                   {{this.description}}
                 </p>
-                <a href="#" class="btn rooms-btn">View &rarr;</a>
+                <a href="#" class="btn posts-btn">View &rarr;</a>
               </div>
             </div>
               {{/each}}
-            <div class="grid-item featured-rooms">
+            <div class="grid-item featured-posts">
               <div class="image-wrap">
               </div>
-              <div class="room-info-wrap">
-                <span class="room-price"
-                  >$200 <span class="per-night">Per Night</span>
+              <div class="post-info-wrap">
+                <span class="post-price"
+                  >Title</span>
                 </span>
                 <p class="paragraph">
                   What is Lorem Ipsum Lorem Ipsum is simply dummy text of the
@@ -32,15 +32,15 @@
                   unknown printer took a galley of type and scrambled it to make
                   a type specimen book it has?
                 </p>
-                <a href="#" class="btn rooms-btn">View &rarr;</a>
+                <a href="#" class="btn posts-btn">View &rarr;</a>
               </div>
             </div>
-                <div class="grid-item featured-rooms">
+                <div class="grid-item featured-posts">
               <div class="image-wrap">
               </div>
-              <div class="room-info-wrap">
-                <span class="room-price"
-                  >$200 <span class="per-night">Per Night</span>
+              <div class="post-info-wrap">
+                <span class="post-price"
+                  >Title</span>
                 </span>
                 <p class="paragraph">
                   What is Lorem Ipsum Lorem Ipsum is simply dummy text of the
@@ -49,15 +49,15 @@
                   unknown printer took a galley of type and scrambled it to make
                   a type specimen book it has?
                 </p>
-                <a href="#" class="btn rooms-btn">View &rarr;</a>
+                <a href="#" class="btn posts-btn">View &rarr;</a>
               </div>
             </div>
-                <div class="grid-item featured-rooms">
+                <div class="grid-item featured-posts">
               <div class="image-wrap">
               </div>
-              <div class="room-info-wrap">
-                <span class="room-price"
-                  >$200 <span class="per-night">Per Night</span>
+              <div class="post-info-wrap">
+                <span class="post-price"
+                  >Title</span>
                 </span>
                 <p class="paragraph">
                   What is Lorem Ipsum Lorem Ipsum is simply dummy text of the
@@ -66,7 +66,7 @@
                   unknown printer took a galley of type and scrambled it to make
                   a type specimen book it has?
                 </p>
-                <a href="#" class="btn rooms-btn">View &rarr;</a>
+                <a href="#" class="btn posts-btn">View &rarr;</a>
               </div>
             </div>
             
@@ -175,7 +175,7 @@ section {
 }
 
 
-/* Hotels */
+/* knw */
 
 .section-head {
   text-align: center;
@@ -205,14 +205,14 @@ section {
   align-items: center;
   justify-content: center;
 }
-.featured-hotels {
+.featured-knw {
   height: 35rem;
   color: #fff;
   padding: 1rem;
   position: relative;
   z-index: 0;
 }
-.featured-hotels::before {
+.featured-knw::before {
   content: "";
   position: absolute;
   top: 0;
@@ -249,9 +249,9 @@ section {
   overflow:hidden;
 }
 
-/* Rooms */
+/* posts */
 
-.rooms {
+.posts {
   background-color: #f2f6f9;
 }
 
@@ -262,7 +262,7 @@ section {
 
 
 
-.room-name {
+.post-name {
   font-size: 2.6rem;
   background-color: var(--yellow-solid);
   color: #fff;
@@ -273,7 +273,7 @@ section {
   z-index: 10;
 }
 
-.room-price {
+.post-price {
   display: block;
   font-size: 3.6rem;
   font-weight: bold;
@@ -284,12 +284,12 @@ section {
   font-size: 1.4rem;
   font-weight: 100;
 }
-.rooms-btn {
+.posts-btn {
   color: var(--dark-color);
   padding: 0;
   transition: color 0.5s;
 }
-.rooms-btn:hover {
+.posts-btn:hover {
   color: var(--yellow-solid);
 }
 
@@ -410,16 +410,16 @@ section {
   .options {
     min-width: 10rem;
   }
-  /* Room */
-  .rooms-grid {
+  /* post */
+  .posts-grid {
     grid-gap: 8rem;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   }
-  .featured-rooms {
+  .featured-posts {
     flex-direction: row;
     align-items: flex-start;
   }
-  .room-info-wrap {
+  .post-info-wrap {
     margin-left: 1.5rem;
   }
 }
